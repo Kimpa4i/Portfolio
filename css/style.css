@@ -6,7 +6,7 @@ body {
     background-color: #232326;
     color: #F3F2F0;
 }
-.dark.nav-link {
+.dark .nav-link {
     color: #F3F2F0;
 }
 
@@ -16,7 +16,7 @@ body {
     color: #010101;
 }
 
-.light.nav-link {
+.light .nav-link {
     color: #010101;
 }
 
@@ -72,7 +72,6 @@ padding-right: 16px;
 
 .nav-link {
     text-decoration: none;
-    color: #F3F2F0;
     font-size: 14px;
 
 }
