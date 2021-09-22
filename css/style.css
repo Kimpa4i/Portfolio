@@ -6,6 +6,21 @@ body {
     background-color: #232326;
     color: #F3F2F0;
 }
+.dark.nav-link {
+    color: #F3F2F0;
+}
+
+
+.light {
+    background-color: #F3F2F0;
+    color: #010101;
+}
+
+.light.nav-link {
+    color: #010101;
+}
+
+
 .wrapper {
 max-width: 1140px;
 margin: 0 auto;
@@ -25,6 +40,34 @@ padding-right: 15px;
 .photo {
 margin-bottom: 120px;
 width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.nav {
+list-style-type: none;
+padding-left: 0px;
+margin: 0px;
+display: flex;
+}
+
+
+.nav-item {
+padding-left: 16px;
+padding-right: 16px;
+}
+
+.nav-item:first-child {
+    padding: 0px;
+}
+
+.nav-item:last-child {
+    padding: 0px;
 }
 
 .nav-link {
