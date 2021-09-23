@@ -56,7 +56,7 @@ header {
 }
 
 .nav {
-list-style-type: none;
+list-style-type:none;
 padding-left: 0px;
 margin: 0px;
 display: flex;
@@ -69,11 +69,11 @@ padding-right: 16px;
 }
 
 .nav-item:first-child {
-    padding: 0px;
+    padding-left: 0px;
 }
 
 .nav-item:last-child {
-    padding: 0px;
+    padding-right: 0px;
 }
 
 .nav-link {
