@@ -18,7 +18,7 @@ body {
     fill: #fff;
 }
 
-.dark .social,.dark .steps-item   {
+.dark .social,.dark .steps-item,.dark .about-title,.dark .about-description   {
     border-bottom: 1px solid #f3f2f0 ;
 }
 
@@ -40,7 +40,7 @@ body {
 .light .triangle path{
     fill: #D40000;
 }
-.light .social,.light .steps-item  {
+.light .social,.light .steps-item,.light .about-title,.light .about-description  {
     border-bottom: 1px solid #010101 ;
 }
 .light .steps-item:first-child {
@@ -210,7 +210,7 @@ font-size: 28px ;
  }
 
  .section-steps{
-    padding-top: 180px;
+    padding-top: 149px;
     padding-bottom: 198px;
  }
 
@@ -237,3 +237,59 @@ font-size: 28px ;
     right: 38px;
     top: calc(50% - 53px)
  }
+
+ .about {
+     display: grid;
+     grid-template: 310px/repeat(4, 1fr);
+ }
+
+ .about-title {
+     grid-column: 1/3;
+     grid-row: 1/2;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     font-size: 28px;
+     font-weight: 700;
+     padding-bottom: 62px;
+    padding-top: 62px;
+ }
+
+ .about-description {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    font-size: 28px;
+    line-height: 150%;
+    opacity: 0.8;
+    padding: 62px 10px 62px 14px;
+ }
+
+ .about-01 {
+    grid-column: 3/4;
+    grid-row: 2/3; 
+    padding: 44px 20px 35px 20px ;
+ }
+ .about-02 {
+    grid-column: 4/5;
+    grid-row: 2/3; 
+    padding: 44px 10px 35px 10px ;
+ }
+ .about-03 {
+    grid-column: 3/4;
+    grid-row: 3/4; 
+    padding: 10px 20px ;
+ }
+ .about-04 {
+    grid-column: 4/5;
+    grid-row: 3/4; 
+    padding: 10px 10px 35px 10px ;
+ }
+
+ .about-item .description {
+    opacity: 0.8;
+    line-height: 150%;
+ }
+ 
+ .about-item p{
+     margin-top: 25px;
+ }
+ 
