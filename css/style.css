@@ -181,7 +181,7 @@ position: relative;
      width: 16px;
      height: 12px;
      display: block;
-     background-image: url(/Portfolio/img/icons/Arrow\ 1.svg);
+     background-image: url(/img/icons/Arrow\ 1.svg);
      margin-left: 15px;
  }
  .skill {
@@ -240,7 +240,16 @@ font-size: 28px ;
     top: calc(50% - 138px);
     z-index: 1;
  }
+ 
 
+ .circle-tarif {
+ width: 140 px;
+ height: 140 px;
+ }
+ .circle-price {
+    width: 100 px;
+    height: 100 px;
+    }
  .triangle {
     position: absolute;
     left: -151px;
@@ -349,12 +358,14 @@ list-style-type: none;
 padding: 0;
 margin: 0;
 position: absolute;
-top: -42px;
+top: -62px;
 font-style: 16px;
 }
 
 .nav-tabs-item{
 margin-right: 76px;
+padding-top: 21px;
+padding-bottom: 21px;
 }
 .nav-tabs-link{
 border-bottom: 1px solid transparent;
@@ -364,7 +375,7 @@ text-decoration: none;
 font-size: 16px;
 }
 
-.nav-tabs-link.active{
+.nav-tabs-item.ui-tabs-active .nav-tabs-link{
     border-bottom: 1px solid #F3F2F0;
     padding-bottom: 22px;
     color: #F3F2F0;
@@ -425,3 +436,190 @@ font-size: 16px;
     height: 315px;
     object-fit: cover;
 }
+
+.section-advantages {
+padding-top: 153px;
+padding-bottom: 100px;
+}
+
+.advantages-text{
+    font-size: 28px;
+    line-height: 150%;
+    max-width: 870px;
+
+}
+
+.advantages {
+display: grid;
+grid-template: 1fr 1fr/repeat(3,1fr);
+grid-gap: 77px 18px;
+border-top: 1px solid #F3F2F0;
+padding-top: 78px;
+margin-top: 79px;
+}
+
+.advantages-item {
+    display: flex;
+    align-items: center;
+    
+}
+.advantages-image {
+    margin-right: 40px;
+}
+
+.advantages-image svg {
+width: 40px;
+height: 40px;
+
+}
+
+.advantages-image path {
+fill: #F3F2F0;
+}
+
+.advantages .title-h3 {
+margin-top: 0px;
+margin-bottom: 11px;
+}
+
+.advantages-description {
+margin-bottom: 0px;
+font-size: 14px;
+line-height: 150%;
+opacity: 0.8;
+margin-top: 0px;
+}
+
+.nav-tabs-link:focus {
+outline: none;
+} 
+
+.tech {
+    display: grid;
+    grid-template: 148px 148px/repeat(4,1fr);
+    text-align: center;
+}
+.tech-item {
+    border-bottom: 1px solid rgba(243, 242, 240, 0.3);
+    border-right: 1px solid rgba(243, 242, 240, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.tech-item:nth-child(5),.tech-item:first-child {
+    border-left: 1px solid rgba(243, 242, 240, 0.3);
+} 
+
+.html, .css, .js, .jquery {
+    border-top: 1px solid rgba(243, 242, 240, 0.3)
+}
+
+.tech-image {
+    filter: grayscale(100%);
+    transition: 0.2s ease;
+}
+
+.tech-item:hover .tech-image {
+filter: grayscale(0%);
+}
+
+.ui-tooltip {
+    background-color: #E31B1B;
+    border-color: #E31B1B!important;
+    border-radius: 0px;
+    text-align: center;
+    box-shadow: none!important;
+    font-size: 10px;
+    color: rgba(243, 242, 240, 0.8);
+    max-width: 232px;
+    line-height: 150%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.ui-tooltip-content::before {
+content: "";
+position: absolute;
+display: block;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: -20px;
+width: 2px;
+border: 10px solid transparent;
+border-bottom: 10px solid #E31B1B;
+}
+
+.tarif {
+    display: grid;
+    grid-template: repeat(4,1fr)/1fr 1fr;
+
+}
+.tarif-item {
+    border-bottom: 1px solid #f3f2f0;
+}
+
+.tarif-title {
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.tarif-description {
+    font-size: 28px;
+    line-height: 150%;
+    opacity: 0.8;
+ }
+
+ .tarif-name{
+    font-size: 28px;
+    line-height: 150%;
+ }
+
+ .tarif-text {
+    font-size: 16px;
+    line-height: 150%;
+    opacity: 0.8;
+ }
+
+ .tarif .project {
+     display: inline-flex;
+ }
+
+ .tarif-pack {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+ }
+
+ .tarif-list{
+     list-style-type: none;
+     padding-left: 0;
+     margin: 0;
+ }
+
+ .tarif-list-item{
+     position: relative;
+     padding-left: 30px;
+     margin-bottom: 10px;
+ }
+
+ .tarif-list-item::before{
+ content: '';
+ display: block;
+ width: 4px;
+ height: 4px;
+ background-color: #f3f2f0;
+ border-radius: 100%;
+ position: absolute;
+ left: 0;
+ top:calc(50% - 2px)
+ }
+
+ .tarif-price{
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 150%;
+ }
+
